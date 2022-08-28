@@ -1,16 +1,24 @@
 {
-  "name": "@vitejs/plugin-static",
-  "version": "0.0.1",
+  "name": "vite-plugin-static",
+  "version": "0.0.2",
   "description": "a plugin to handle static files",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && rollup -c"
   },
+  "repository": "https://github.com/Alfred-kai/-vitejs-plugin-static",
+  "files": [
+    "dist/index.js"
+  ],
   "peerDependencies": {
     "vite": "^2.5.10"
   },
   "author": "Alfred",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.4.0",
     "@types/node": "^18.7.13",
